@@ -8,13 +8,13 @@
 
 <div align="center">
  
- 🔭 I’m currently working with technology  **as react, node.js, mysql and more!**
+ 🌐🚀 Actualmente estoy trabajando con tecnología  **como  React, Node.js, Angular+ and otros mas!**  🚀🌐
  
- 🌱 I’m currently learning **Nextjs, Bot-Whastapp**
+ 🔭🌱 Actualmente estoy aprendiendo **Nextjs, Bot-Whastapp y GitHub Actions** 🔭🌱
 
-💬 Ask me about **Node.js, React, Typescript, or anything [here](https://github.com/jmolina24/jmolina24/issues)**
+💬 Preguntame sobre **Node.js, React, Typescript, or anything [here](https://github.com/jmolina24/jmolina24/issues)** 💬
 
-📫 How to reach me:
+📫 Cómo contactarme:
 
  </div>
  
@@ -22,14 +22,14 @@
   <a href="mailto:jairmolina51@gmail.com">
     <img src="https://img.shields.io/badge/Gmail-333333?style=for-the-badge&logo=gmail&logoColor=red" />
   </a>
-  <a href="https://enriquedlcdev.com/" target="_blank">
-     <img src="https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=todoist&logoColor=white" target="_blank" /> <!-- sqlite, safari, google-chrome 
+  <a href="https://www.instagram.com/jamolina24/" target="_blank">
+     <img src="https://img.shields.io/badge/INSTAGRAM-405DE6?style=for-the-badge&logo=instagram&logoColor=white" target="_blank" /> 
   </a>
 </div>
 
  <hr/>
  
-<h2 align="center">⚒️ languages - frameworks - tools ⚒️</h2>
+<h2 align="center">⚒️ Languages - Frameworks - Tools ⚒️</h2>
 <br/>
 <div align="center">
     <img src="https://skillicons.dev/icons?i=html,css,react,js,ts,nodejs,git,github" /> <br>
