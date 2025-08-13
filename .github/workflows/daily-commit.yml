@@ -5,19 +5,24 @@ on:
     - cron: "0 12 * * *" # Todos los días a las 12:00 UTC
   workflow_dispatch: # Permite ejecutarlo manualmente
 
+permissions:
+  contents: write # Permitir escritura al repositorio
+
 jobs:
   update:
     runs-on: ubuntu-latest
     steps:
       - name: Clonar repositorio
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Configurar usuario git
         run: |
-          git config --global user.name "Jmolina24"
-          git config --global user.email "jairmolina51@gmail.com"
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
-      - name: Actualizar archivo README
+      - name: Actualizar archivo update_log.txt
         run: |
           echo "Última actualización: $(date '+%Y-%m-%d %H:%M:%S')" > update_log.txt
 
