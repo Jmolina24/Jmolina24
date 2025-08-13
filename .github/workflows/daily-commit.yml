@@ -14,8 +14,8 @@ jobs:
 
       - name: Configurar usuario git
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "Jmolina24"
+          git config --global user.email "jairmolina51@gmail.com"
 
       - name: Actualizar archivo README
         run: |
