@@ -66,7 +66,6 @@
     <img src="https://readme-typing-svg.herokuapp.com/?font=Righteous&size=35&color=F7F7F7&center=true&vCenter=true&width=500&height=70&duration=4000&lines=Thanks+for+visiting!+✌️;I'm+always+down+to+collab+:)">
 </h3>
 <br/>
-<a href="https://git.io/streak-stats"><img src="https://streak-stats.demolab.com?user=Jmolina24&theme=react&border_radius=10&locale=es" alt="GitHub Streak" /></a>
 <!--
 **jmolina24/jmolina24** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
