@@ -1,0 +1,28 @@
+name: Daily Commit
+
+on:
+  schedule:
+    - cron: "0 12 * * *" # Todos los días a las 12:00 UTC
+  workflow_dispatch: # Permite ejecutarlo manualmente
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clonar repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar usuario git
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Actualizar archivo README
+        run: |
+          echo "Última actualización: $(date '+%Y-%m-%d %H:%M:%S')" > update_log.txt
+
+      - name: Commit y push
+        run: |
+          git add update_log.txt
+          git commit -m "chore: actualización automática [skip ci]" || echo "No hay cambios"
+          git push
