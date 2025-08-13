@@ -56,6 +56,7 @@
 <br>
 <div align=center>
 [![GitHub Streak](https://streak-stats.demolab.com/?user=Jmolina24&theme=react&border_radius=10)](https://git.io/streak-stats)
+<a href="https://git.io/streak-stats"><img src="https://streak-stats.demolab.com?user=Jmolina24&theme=react&border_radius=10&locale=es" alt="GitHub Streak" /></a>
 
   <img width=410 src="https://streak-stats.demolab.com/?user=Jmolina24&theme=react&border_radius=10)](https://git.io/streak-stats)" alt="streak stats"/>
   <img width=390 src="https://github-readme-stats.vercel.app/api?username=jmolina24&count_private=true&show_icons=true&theme=react&rank_icon=github&border_radius=10" alt="readme stats" />
