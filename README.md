@@ -55,12 +55,6 @@
 <h2 align="center">⚡ Stats ⚡</h2>
 <br>
 <div align=center>
-
-[![GitHub Streak](https://streak-stats.demolab.com/?user=Jmolina24&theme=react&border_radius=10)](https://git.io/streak-stats)
-
-<a href="https://git.io/streak-stats">
-  <img width="410" src="https://streak-stats.demolab.com/?user=Jmolina24&theme=react&border_radius=10" alt="GitHub Streak"/>
-</a>
   <img width=410 src="https://streak-stats.demolab.com/?user=Jmolina24&theme=react&border_radius=10)](https://git.io/streak-stats)" alt="streak stats"/>
   <img width=390 src="https://github-readme-stats.vercel.app/api?username=jmolina24&count_private=true&show_icons=true&theme=react&rank_icon=github&border_radius=10" alt="readme stats" />
   <br/>
@@ -72,7 +66,7 @@
     <img src="https://readme-typing-svg.herokuapp.com/?font=Righteous&size=35&color=F7F7F7&center=true&vCenter=true&width=500&height=70&duration=4000&lines=Thanks+for+visiting!+✌️;I'm+always+down+to+collab+:)">
 </h3>
 <br/>
-
+<a href="https://git.io/streak-stats"><img src="https://streak-stats.demolab.com?user=Jmolina24&theme=react&border_radius=10&locale=es" alt="GitHub Streak" /></a>
 <!--
 **jmolina24/jmolina24** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
