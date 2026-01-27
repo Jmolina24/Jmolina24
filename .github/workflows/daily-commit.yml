@@ -7,6 +7,7 @@ on:
 
 permissions:
   contents: write # Permitir escritura al repositorio
+  issues: write   # Permitir crear issues para notificaciones
 
 jobs:
   update:
@@ -31,3 +32,16 @@ jobs:
           git add update_log.txt
           git commit -m "chore: actualización automática [skip ci]" || echo "No hay cambios"
           git push
+
+      - name: Notificar vía GitHub (crear issue)
+        if: always() # cambiar a success() para notificar sólo en éxito, o failure() sólo en fallo
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const runUrl = `https://github.com/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`;
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: `Workflow ${context.workflow} finalizado — Run ${context.runId}`,
+              body: `Hola @Jmolina24,\n\nEl workflow **${context.workflow}** ha finalizado. Revisa el run: ${runUrl}\n\n(Este issue fue creado automáticamente por el workflow para notificar el resultado.)`
+            });
