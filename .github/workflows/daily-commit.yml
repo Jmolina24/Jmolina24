@@ -33,25 +33,3 @@ jobs:
           git commit -m "chore: actualización automática [skip ci]" || echo "No hay cambios"
           git push
 
-      - name: Notificar vía GitHub (solo en éxito, y cerrar automáticamente)
-        if: ${{ success() }}
-        uses: actions/github-script@v6
-        with:
-          script: |
-            const runUrl = `https://github.com/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`;
-            const title = `Workflow ${context.workflow} finalizado correctamente — Run ${context.runId}`;
-            const body = `Hola @${context.repo.owner},\n\nEl workflow **${context.workflow}** ha finalizado correctamente. Revisa el run: ${runUrl}\n\n(Este issue fue creado automáticamente y se cerrará inmediatamente para evitar acumulación.)`;
-            // Crear el issue
-            const issue = await github.rest.issues.create({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              title,
-              body
-            });
-            // Cerrar el issue inmediatamente
-            await github.rest.issues.update({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              issue_number: issue.data.number,
-              state: "closed"
-            });
